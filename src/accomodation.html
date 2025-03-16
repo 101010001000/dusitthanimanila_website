@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accomodation | Dusit Thani Manila</title>
+    <link href="./output.css" rel="stylesheet">
+    <!-- Tailwind CSS (if not already in output.css) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        /* Custom styles for responsiveness */
+        .h-70 {
+            height: 17.5rem; /* Default height for images */
+        }
+        @media (max-width: 640px) {
+            .h-70 {
+                height: 12rem; /* Smaller height on mobile */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-white shadow-md z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-sm font-playfair font-bold">Dusit Hotels & Resorts</div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row absolute md:static top-12 left-0 w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0">
+                <a href="./index.html" class="hover:text-[#A59D84] py-2 md:py-0">Home</a>
+                <a href="./accomodation.html" class="hover:text-[#A59D84] py-2 md:py-0">Accommodation</a>
+                <a href="./Amenities.html" class="hover:text-[#A59D84] py-2 md:py-0">Amenities</a>
+                <a href="./contact.html" class="hover:text-[#A59D84] py-2 md:py-0">Contact Us</a>
+                <a href="./booking.html" class="border border-[#A59D84] text-[#504B38] px-1 py-1 md:px-4 md:py-2 rounded hover:bg-[#A59D84] hover:text-white mt-2 md:mt-0 text-center">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-cover bg-center" style="background-image: url('/assets/images/E.webp');">
+        <div class="relative max-w-7xl mx-auto py-12 px-4 sm:py-24 sm:px-6 lg:py-32 lg:px-8">
+            <h1 class="text-2xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-6xl">Accomodations</h1>
+            <p class="mt-4 text-lg text-white max-w-3xl sm:mt-6 sm:text-xl">Your Home Away from Home.</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-12 sm:mt-16">
+
+    <div class="bg-white rounded shadow overflow-hidden mb-6">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-2/5 m-4">
+                <img src="/assets/images/cb2.webp" alt="Standard room with balcony" class="w-full h-70 object-cover rounded-lg">
+            </div>
+            <div class="md:w-3/5 p-4 sm:p-6">
+                <h2 class="text-lg sm:text-xl font-medium text-gray-800 mb-2">First class rooms with balcony</h2>
+                <p class="text-gray-600 mb-2 text-sm sm:text-base">Our 9 First Class rooms have a balcony on the south with a dune view.</p>
+                
+                <a href="#" class="text-[#B9B28A] text-sm modal-trigger" 
+                data-modal-title="First class rooms with balcony" 
+                data-modal-content="Our 9 First Class rooms have a balcony on the south with a dune view. Each room features premium amenities including high-end bedding, spacious bathrooms with rainfall showers, and a private furnished balcony overlooking the beautiful dunes. Perfect for guests seeking a luxurious stay with scenic views.">See Details</a>
+                
+                <p class="text-gray-600 mt-4 text-sm sm:text-base">Suitable for 10 guests</p>
+                <p class="text-gray-500 mt-2 text-sm sm:text-base">Up to 3 Guests | Free WiFi | Breakfast Included</p>
+                <div class="text-right mt-4">
+                    <p class="text-xl sm:text-2xl font-medium text-gray-800">25,000 / night</p>
+                    <button class="bg-[#504B38] text-white py-2 px-4 rounded mt-4 text-sm sm:text-base">Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white rounded shadow overflow-hidden mb-6">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-2/5 m-4">
+                <img src="/assets/images/deluxe.webp" alt="Standard room with balcony" class="w-full h-70 object-cover rounded-lg">
+            </div>
+            <div class="md:w-3/5 p-4 sm:p-6">
+                <h2 class="text-lg sm:text-xl font-medium text-gray-800 mb-2">Deluxe Suite</h2>
+                <p class="text-gray-600 mb-2 text-sm sm:text-base">Our Deluxe Suites offer spacious accommodations with modern amenities.</p>
+                
+                <a href="#" class="text-[#B9B28A] text-sm modal-trigger" 
+                data-modal-title="Deluxe Suite" 
+                data-modal-content="Our Deluxe Suites offer spacious accommodations with modern amenities. These rooms feature a separate living area, king-size bed, premium entertainment system, and a luxurious bathroom with both a soaking tub and walk-in shower. Perfect for extended stays or guests who desire extra space.">See Details</a>
+                
+                <p class="text-gray-600 mt-4 text-sm sm:text-base">Suitable for 5 guests</p>
+                <p class="text-gray-500 mt-2 text-sm sm:text-base">Up to 3 Guests | Free WiFi | Breakfast Included</p>
+                <div class="text-right mt-4">
+                    <p class="text-xl sm:text-2xl font-medium text-gray-800">11,000 / night</p>
+                    <button class="bg-[#504B38] text-white py-2 px-4 rounded mt-4 text-sm sm:text-base">Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white rounded shadow overflow-hidden mb-6">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-2/5 m-4">
+                <img src="/assets/images/cs.webp" alt="Standard room with balcony" class="w-full h-70 object-cover rounded-lg">
+            </div>
+            <div class="md:w-3/5 p-4 sm:p-6">
+                <h2 class="text-lg sm:text-xl font-medium text-gray-800 mb-2">Classic Suite</h2>
+                <p class="text-gray-600 mb-2 text-sm sm:text-base">Our Classic Suites feature elegant decor and comfortable furnishings.</p>
+                
+                <a href="#" class="text-[#B9B28A] text-sm modal-trigger" 
+                data-modal-title="Classic Suite" 
+                data-modal-content="Our Classic Suites feature elegant decor and comfortable furnishings. Each suite includes a plush queen-size bed, work desk, seating area, and a beautiful bathroom with premium toiletries. These rooms blend traditional charm with contemporary comforts for a delightful stay.">See Details</a>
+                
+                <p class="text-gray-600 mt-4 text-sm sm:text-base">Suitable for 5 guests</p>
+                <p class="text-gray-500 mt-2 text-sm sm:text-base">Up to 3 Guests | Free WiFi | Breakfast Included</p>
+                <div class="text-right mt-4">
+                    <p class="text-xl sm:text-2xl font-medium text-gray-800">11,000 / night</p>
+                    <button class="bg-[#504B38] text-white py-2 px-4 rounded mt-4 text-sm sm:text-base">Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white rounded shadow overflow-hidden mb-6">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-2/5 m-4">
+                <img src="/assets/images/captainS2.webp" alt="Standard room with balcony" class="w-full h-70 object-cover rounded-lg">
+            </div>
+            <div class="md:w-3/5 p-4 sm:p-6">
+                <h2 class="text-lg sm:text-xl font-medium text-gray-800 mb-2">Captain's Suite</h2>
+                <p class="text-gray-600 mb-2 text-sm sm:text-base">Our exclusive Captain's Suite offers luxury with a nautical theme.</p>
+                
+                <a href="#" class="text-[#B9B28A] text-sm modal-trigger" 
+                data-modal-title="Captain's Suite" 
+                data-modal-content="Our exclusive Captain's Suite offers luxury with a nautical theme. This premium accommodation features a master bedroom with a king-size bed, living room with panoramic views, custom furnishings, and a spa-like bathroom. The suite's unique design elements are inspired by maritime heritage, creating a sophisticated and memorable experience.">See Details</a>
+                
+                <p class="text-gray-600 mt-4 text-sm sm:text-base">Suitable for 3 guests</p>
+                <p class="text-gray-500 mt-2 text-sm sm:text-base">Up to 3 Guests | Free WiFi | Breakfast Included</p>
+                <div class="text-right mt-4">
+                    <p class="text-xl sm:text-2xl font-medium text-gray-800">10,000 / night</p>
+                    <button class="bg-[#504B38] text-white py-2 px-4 rounded mt-4 text-sm sm:text-base">Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+
+        <!-- Standard Room -->
+        <div class="bg-white rounded shadow overflow-hidden mb-6">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-2/5 m-4">
+                    <img src="/assets/images/captainS3.webp" alt="Standard room with balcony" class="w-full h-70 object-cover rounded-lg">
+                </div>
+                <div class="md:w-3/5 p-4 sm:p-6">
+                    <h2 class="text-lg sm:text-xl font-medium text-gray-800 mb-2">Standard rooms</h2>
+                    <p class="text-gray-600 mb-2 text-sm sm:text-base">Our 18 comfortable standard rooms are situated on the south/south-west to the dunes.</p>
+                    <a href="#" class="text-[#B9B28A] text-sm modal-trigger" 
+                    data-modal-title="Captain's Suite" 
+                    data-modal-content="Our exclusive Captain's Suite offers luxury with a nautical theme. This premium accommodation features a master bedroom with a king-size bed, living room with panoramic views, custom furnishings, and a spa-like bathroom. The suite's unique design elements are inspired by maritime heritage, creating a sophisticated and memorable experience.">See Details</a>
+                    <p class="text-gray-600 mt-4 text-sm sm:text-base">Suitable for 6 guests</p>
+                    <p class="text-gray-500 mt-2 text-sm sm:text-base">Up to 3 Guests | Free WiFi | Breakfast Included</p>
+                    <div class="text-right mt-4">
+                        <p class="text-xl sm:text-2xl font-medium text-gray-800">15,000 / night</p>
+                        <button class="bg-[#504B38] text-white py-2 px-4 rounded mt-4 text-sm sm:text-base">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Standard Room with Balcony -->
+        <div class="bg-white rounded shadow overflow-hidden mb-6">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-2/5 m-4">
+                    <img src="/assets/images/jgsuite.webp" alt="Standard room with balcony" class="w-full h-70 object-cover rounded-lg">
+                </div>
+                <div class="md:w-3/5 p-4 sm:p-6">
+                    <h2 class="text-lg sm:text-xl font-medium text-gray-800 mb-2">Standard room with balcony</h2>
+                    <p class="text-gray-600 mb-2 text-sm sm:text-base">Our 2 standard rooms with balcony are situated on the south with a dune view.</p>
+                    <a href="#" class="text-[#B9B28A] text-sm modal-trigger" 
+                    data-modal-title="Captain's Suite" 
+                    data-modal-content="Our exclusive Captain's Suite offers luxury with a nautical theme. This premium accommodation features a master bedroom with a king-size bed, living room with panoramic views, custom furnishings, and a spa-like bathroom. The suite's unique design elements are inspired by maritime heritage, creating a sophisticated and memorable experience.">See Details</a>
+                    <p class="text-gray-600 mt-4 text-sm sm:text-base">Suitable for 2 guests</p>
+                    <p class="text-gray-500 mt-2 text-sm sm:text-base">Up to 3 Guests | Free WiFi | Breakfast Included</p>
+                    <div class="text-right mt-4">
+                        <p class="text-xl sm:text-2xl font-medium text-gray-800">9,000 / night</p>
+                        <button class="bg-[#504B38] text-white py-2 px-4 rounded mt-4 text-sm sm:text-base">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#ECEBDE] text-white py-8">
+        <div class="container mx-auto px-">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-[#A59D84]">Dusit Hotels & Resorts</h4>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-[#504B38]">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-[#A59D84]">About Us</a></li>
+                        <li><a href="#" class="text-[#A59D84]">Contact</a></li>
+                        <li><a href="#" class="text-[#A59D84]">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-[#504B38]">Get in Touch</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-[#A59D84]">Facebook</a></li>
+                        <li><a href="#" class="text-[#A59D84]">Instagram</a></li>
+                        <li><a href="#" class="text-[#A59D84]">Twitter</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-[#504B38]">Drop Us a Line</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-[#A59D84]">Email: info.dusitthani@gmail.com</a></li>
+                        <li><a href="#" class="text-[#A59D84]">Phone: 09636735640</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-[#A59D84]">© 2025 Dusit International. All rights reserved.</p>
+        </div>
+    </footer>
+
+<!-- Reusable Modal with Dark Overlay -->
+<div id="room-modal" tabindex="-1" aria-hidden="true" class="hidden fixed top-0 right-0 left-0 bottom-0 z-50 items-center justify-center overflow-x-hidden overflow-y-auto">
+    <!-- Dark Overlay Background -->
+    <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity"></div>
+    
+    <!-- Modal Container -->
+    <div class="relative p-4 w-full max-w-2xl mx-auto my-8">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow-lg">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-200">
+                <h3 id="modal-title" class="text-xl font-semibold text-gray-900">
+                    Room Details
+                </h3>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="room-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-4 md:p-5 space-y-4">
+                <p id="modal-content" class="text-base leading-relaxed text-gray-500">
+                    Room details will appear here.
+                </p>
+            </div>
+            <!-- Modal footer -->
+            <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
+                <button data-modal-hide="room-modal" type="button" class="text-white bg-[#504B38] hover:bg-[#3d3a2a] focus:ring-4 focus:outline-none focus:ring-[#b9b28a] font-medium rounded-lg text-sm px-5 py-2.5 text-center">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById('menu-toggle');
+            const menu = document.getElementById('menu');
+            menuToggle.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+    // Get all modal trigger links
+    const modalTriggers = document.querySelectorAll('.modal-trigger');
+    const modal = document.getElementById('room-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalContent = document.getElementById('modal-content');
+    
+    // Add click event listeners to each trigger
+    modalTriggers.forEach(trigger => {
+        trigger.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Get the room-specific data from data attributes
+            const title = this.getAttribute('data-modal-title');
+            const content = this.getAttribute('data-modal-content');
+            
+            // Update modal content
+            modalTitle.textContent = title;
+            modalContent.textContent = content;
+            
+            // Show modal
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        });
+    });
+    
+    // Setup close functionality
+    const closeButtons = document.querySelectorAll('[data-modal-hide="room-modal"]');
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        });
+    });
+    
+    // Close modal when clicking outside
+    window.addEventListener('click', function(e) {
+        if (e.target === modal.querySelector('.bg-black')) {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+    });
+});
+    </script>
+
+</body>
+</html>
